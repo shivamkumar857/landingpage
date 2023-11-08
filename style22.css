@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+}
+#left{
+    height: 100%;
+    width: 40%;
+    background-color:aliceblue;
+    position: relative;
+}
+#right{
+    height: 100%;
+    width: 60%;
+    background-color: yellow;
+}
+#righttop{
+    height: 50%;
+    width: 100%;
+    background-color:pink;
+    display: flex;
+}
+#rightbottom{
+    height: 50%;
+    width: 100%;
+    background-color:yellowgreen;
+    display: flex;
+}
+#righttoppart1{
+    height: 100%;
+    width: 50%;
+    background-color:red;  /*it work when backgrond image not work */
+    /* background-image: url(https://images.unsplash.com/photo-1583146191066-dd148554b72b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWljcm9zb2Z0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60); */
+    /* background-image: url(https://images.unsplash.com/photo-1633419461186-7d40a38105ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWljcm9zb2Z0JTIwbG9nb3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60); */
+    background-size: cover;
+    background-position: center;
+}
+
+#rightbottompart1{
+    height: 100%;
+    width: 50%;
+    background-color:aqua;
+}
+#rightbottompart2{
+    height: 100%;
+    width: 50%;
+    background-color:yellow;
+}
+
+
+
+   
+#righttoppart2{
+
+   width: 50%;
+   height: 100%;
+   background-color: rgb(12, 235, 34);
+}
+
+#leftnav{
+    display: flex;
+    width: 100%;
+    font-size: 5px;
+     /* margin-left: 10px;  */
+    /* margin-right: 10px; 
+     */
+}
+#leftnav,a{
+    margin: auto;
+    padding: 1px;
+    justify-content: space-between;
+}
+#textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#textcenter,p{
+    font-size: 3px;
+    font-weight: 900;
+}
+#textcenter,h1{
+    font-size: 10px;
+    font-weight: 900;
+}
+#textcenter a{
+    font-size: 3px;
+    
+}
+@media(max-width:500px){
+    #main{
+        flex-direction: column;
+    }
+    #main #left{
+        width: 100%;
+    }
+    #main #right{
+        width: 100%;
+    }
+}
